@@ -21,35 +21,56 @@
         </h1>
 
         <main>
-            <div>
+            <div class="container-subtitle">
                 <h2>
                     My Contacts
                 </h2>
             </div>
 
             <form>
-                <input type="text" name="nome" id="nome">
-                <input type="number" name="telefone" id="telefone">
-                <button type="submit">Salvar</button>
+                
+                <div class="form-inputs">
+                    <input type="text" name="nome" id="nome" placeholder="Nome Completo">
+                    <input type="number" name="telefone" id="telefone" placeholder="Tel: (xx) x xxxx-xxxx">
+                </div>
+                
+                <div class="selecao-favoritar">
+                    <div>
+                        <label for="favoritar">Favoritar</label>
+                        <input type="checkbox" name="favoritar" id="favoritar">
+                    </div>
+                
+                    <button type="submit">Salvar</button>
+                </div>
             </form>
 
             <section id="info_contacts">
-                <p>
-
-                </p>
+                <div class="resumo-agenda">
+                    <b>XX Contatos Cadastrados</b>
+                </div>
             </section>
 
+            <div class="gradient-bar"></div>
 
             <section class="contact-list">
 
-                <table>
-                    <thead>
-                        <th>
-                            <tr>Nome</tr>
-                            <tr>Telefone</tr>
-                        </th>
-                    </thead>
-                </table>
+                <div class="favoritos">
+                    <h3>
+                        FAVORITOS
+                    </h3>
+
+                    <div class="lista-de-favoritos">
+
+                    </div>
+                </div>
+
+                <div class="separador-bar"></div>
+
+                <div class="nao-favoritos">
+                    <h3>
+                        CONTATOS
+                    </h3>
+                </div>
 
             </section>
 

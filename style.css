@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 700px;
+    padding: 15px 10px;
+    border: 1px solid gray;
+}
+
+h1 {
+    padding: 15px 0;
+}
+
+.container-subtitle {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 8px;
+
+    background-image: url('./images/contactus.jpg');
+    background-size: cover;
+}
+
+h2 {
+    color: white;
+    padding: 15px 0 15px 20px;
+}
+
+.form-inputs {
+    display: flex;
+    column-gap: 35px;
+    justify-content: center;
+}
+
+input[type="text"] {
+    width: 350px;
+    padding: 6px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+input[type="number"] {
+    padding: 6px 8px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+::-webkit-input-placeholder  { 
+    color:rgb(0, 0, 0); 
+    font-weight: 800;
+}
+
+.selecao-favoritar {
+    display: flex;
+    column-gap: 50px;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+button {
+    width: 100px;
+    padding: 7px;
+    color: white;
+    font-weight: 800;
+    background-color: #0081A7;
+    border: 0;
+    border-radius: 3px;
+    box-shadow: 0 0 9px 4px #989898a4;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.info_contacts {
+    width: 100%;
+}
+
+.resumo-agenda {
+    margin: 20px;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    background: linear-gradient(145deg, #acb3b8, #273748);
+}
+
+.gradient-bar {
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(145deg, #EA8D8D, #A890FE);
+
+    margin: 50px 0;
+}
+
+.separador-bar {
+    width: 70%;
+    margin: 15px auto;
+    border-bottom: 2px dotted gray;
+}
+
+.favoritos {
+    text-align: center;
+}
+
+.nao-favoritos {
+    text-align: center;
+}
