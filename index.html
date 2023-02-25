@@ -18,6 +18,7 @@
 
         <h1>
             CONTATOS
+            <img src="./images/editar.png" class="icone-perfil" alt="Icone de cadastro">
         </h1>
 
         <main>
@@ -27,17 +28,16 @@
                 </h2>
             </div>
 
-            <form>
-                
+            <form id="formulario">
                 <div class="form-inputs">
-                    <input type="text" name="nome" id="nome" placeholder="Nome Completo">
-                    <input type="number" name="telefone" id="telefone" placeholder="Tel: (xx) x xxxx-xxxx">
+                    <input type="text" name="nome" id="nome" placeholder="Nome Completo" required>
+                    <input type="tel" name="telefone" id="telefone" placeholder="Tel: (xx) x xxxx-xxxx" required>
                 </div>
                 
                 <div class="selecao-favoritar">
                     <div>
                         <label for="favoritar">Favoritar</label>
-                        <input type="checkbox" name="favoritar" id="favoritar">
+                        <input type="checkbox" name="favoritar" id="favoritar" value="favoritar">
                     </div>
                 
                     <button type="submit">Salvar</button>
@@ -46,7 +46,7 @@
 
             <section id="info_contacts">
                 <div class="resumo-agenda">
-                    <b>XX Contatos Cadastrados</b>
+                    
                 </div>
             </section>
 
@@ -55,21 +55,52 @@
             <section class="contact-list">
 
                 <div class="favoritos">
-                    <h3>
+                    <h3 class="subtitulo-contatos">
+                        <img src="./images/favorito.png" alt="">
                         FAVORITOS
                     </h3>
 
                     <div class="lista-de-favoritos">
+                        <img src="./images/adicionar.png" class="adicionar-contato ft" alt="Adicionar contato">
+                    
+                        <table class="tabela-contatos tb-favoritos ltc">
+                            <thead>
+                                <tr>
+                                    <th class="col-1 cb">Nome</th>
+                                    <th class="cb">Telefone</th>
+                                </tr>
 
+                                <tbody id="linha-tab-favoritos">
+                                    
+                                </tbody>
+                            </thead>
+                        </table>
                     </div>
                 </div>
 
                 <div class="separador-bar"></div>
 
-                <div class="nao-favoritos">
-                    <h3>
+                <div class="nao-favoritos ltc">
+                    <h3 class="subtitulo-contatos">
                         CONTATOS
                     </h3>
+
+                    <div class="lista-nao-favoritos">
+                        <img src="./images/adicionar-2.png" class="adicionar-contato nft" alt="Adicionar contato">
+
+                        <table class="tabela-contatos tb-nao-favoritos ltc">
+                            <thead>
+                                <tr>
+                                    <th class="col-1 cb">Nome</th>
+                                    <th class="cb">Telefone</th>
+                                </tr>
+                            </thead>
+
+                            <tbody id="linha-tab-nao-favoritos">
+                                    
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
 
             </section>
